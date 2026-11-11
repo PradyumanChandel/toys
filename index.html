@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kidsride Garage | Ride-On Toy Cars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo">Kidsride<span>Garage</span></a>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#showcase">Experience</a>
+      <a href="#lineup">Lineup</a>
+      <a href="#features">Why us</a>
+    </nav>
+    <a href="#lineup" class="nav-cta">Shop now</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow" id="heroEyebrow">Official ride-on series</p>
+        <h1 class="hero-title" id="heroTitle">Drive Like a Legend.</h1>
+        <p class="hero-desc" id="heroDesc">Pick a supercar, press start, and let the adventure begin.</p>
+
+        <div class="price-row">
+          <span class="price" id="heroPrice">₹24,999</span>
+          <span class="old-price" id="heroOld">₹29,999</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#lineup" class="btn btn-primary">Book a test drive <span aria-hidden="true">→</span></a>
+          <div class="hero-meta">
+            <span>★ 4.9 rating</span>
+            <span>Free shipping</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stage" id="heroStage">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="car-stack" id="carStack"></div>
+      </div>
+    </div>
+
+    <!-- Car selector pills -->
+    <div class="selector" role="tablist" aria-label="Choose a car">
+      <button class="pill active" role="tab" aria-selected="true" data-index="0">Lamborghini</button>
+      <button class="pill" role="tab" aria-selected="false" data-index="1">Bugatti</button>
+      <button class="pill" role="tab" aria-selected="false" data-index="2">BMW M5</button>
+      <button class="pill" role="tab" aria-selected="false" data-index="3">BMW M6 GT3</button>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">Scroll <span></span></div>
+  </section>
+
+  <!-- PINNED SCROLL SHOWCASE -->
+  <section class="showcase" id="showcase">
+    <div class="showcase-sticky">
+      <div class="showcase-car" id="showcaseCar">
+        <img src="assets/cars/lamborghini.jpg" alt="" data-showcase-img />
+      </div>
+      <div class="showcase-copy">
+        <p class="eyebrow">Built for big journeys</p>
+        <h2 class="section-title" id="showcaseTitle">Every road is an adventure.</h2>
+        <p class="section-desc" id="showcaseDesc">Scroll to take the car for a spin.</p>
+        <div class="progress"><span id="showcaseBar"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINEUP -->
+  <section class="lineup" id="lineup">
+    <div class="container">
+      <p class="eyebrow reveal">The lineup</p>
+      <h2 class="section-title reveal">Four cars. One favourite.</h2>
+
+      <div class="lineup-grid">
+        <article class="card reveal" data-index="0">
+          <div class="card-img"><img src="assets/cars/lamborghini.jpg" alt="Red Lamborghini Aventador ride-on car" loading="lazy" /></div>
+          <h3>Lamborghini Aventador</h3>
+          <p>Scissor doors, LED headlights, two seats.</p>
+          <div class="card-foot"><strong>₹24,999</strong><button class="card-btn" data-index="0">View</button></div>
+        </article>
+
+        <article class="card reveal" data-index="1">
+          <div class="card-img"><img src="assets/cars/bugatti.jpg" alt="Red Bugatti Chiron ride-on car" loading="lazy" /></div>
+          <h3>Bugatti Chiron</h3>
+          <p>Candy-red finish, orange leather seat, sleek ride.</p>
+          <div class="card-foot"><strong>₹18,499</strong><button class="card-btn" data-index="1">View</button></div>
+        </article>
+
+        <article class="card reveal" data-index="2">
+          <div class="card-img"><img src="assets/cars/bmw-m5.jpg" alt="Blue BMW M5 ride-on car" loading="lazy" /></div>
+          <h3>BMW M5</h3>
+          <p>Glossy blue, signature kidney grille, 12V battery.</p>
+          <div class="card-foot"><strong>₹21,999</strong><button class="card-btn" data-index="2">View</button></div>
+        </article>
+
+        <article class="card reveal" data-index="3">
+          <div class="card-img"><img src="assets/cars/bmw-m6.jpg" alt="Black BMW M6 GT3 ride-on car" loading="lazy" /></div>
+          <h3>BMW M6 GT3</h3>
+          <p>Race livery, rear spoiler, M Power stripes.</p>
+          <div class="card-foot"><strong>₹19,999</strong><button class="card-btn" data-index="3">View</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <p class="eyebrow reveal">Why parents love us</p>
+      <h2 class="section-title reveal">Safe, fun, and built to last.</h2>
+
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="feature-num">01</div>
+          <h3>Parent remote</h3>
+          <p>Control speed and direction from your phone until your child is ready to steer.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature-num">02</div>
+          <h3>Real headlights</h3>
+          <p>LED lights, horn, and music keep playtime lively on every drive.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature-num">03</div>
+          <h3>Safety belt</h3>
+          <p>Secure seat belt and a low top speed designed for ages 3 and up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-inner reveal">
+      <h2 class="section-title">Ready to start the engine?</h2>
+      <p class="section-desc">Pick your car and we will deliver it to your door.</p>
+      <a href="#hero" class="btn btn-primary">Choose my car</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Kidsride Garage. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
